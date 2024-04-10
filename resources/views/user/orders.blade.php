@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CyberMart | My Orders</title>
+    <title>CyberMart | Mis Pedidos</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,14 +20,14 @@
 <body>
     @include('sweetalert::alert');
     @include('user.header')
-    @include('user.mobile_header')    
+    @include('user.mobile_header')
     <main class="main">
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="/" rel="nofollow">Home</a>
-                    <span></span> Shop
-                    <span></span> Your Orders
+                    <a href="/" rel="nofollow">Inicio</a>
+                    <span></span> Tienda
+                    <span></span> Sus pedidos
                 </div>
             </div>
         </div>
@@ -46,16 +46,16 @@
                             <table class="table shopping-summery text-center clean">
                                 <thead>
                                     <tr class="main-heading">
-                                        <th scope="col">Product</th>
-                                        <th scope="col">Order Tracking ID</th>
-                                        <th scope="col">Delivery Status</th>
-                                        <th scope="col">Quantity</th>
-                                        <th scope="col">Total Price</th>
-                                        <th scope="col">View</th>
+                                        <th scope="col">Producto</th>
+                                        <th scope="col">ID de seguimiento de pedidos</th>
+                                        <th scope="col">Estado de la entrega</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Precio total</th>
+                                        <th scope="col">Vista</th>
                                         <th></th>
                                     </tr>
                                 </thead>
-                                <div class="divider center_icon mt-10 mb-30"><b>Active Orders</b></div>
+                                <div class="divider center_icon mt-10 mb-30"><b>Órdenes activas</b></div>
                                 <tbody>
                                     @foreach ($orderData as $order)
                                     <tr>
@@ -66,22 +66,22 @@
                                         <td class="product-des product-name px-5">
                                             @if($order->delivery_status == 'pending')
                                                 <i style="color: #54B435; font-size: 17px;" class="fas fa-check"></i>
-                                                <span class="product-name px-1">Pending</span>
+                                                <span class="product-name px-1">Pendiente</span>
                                             @elseif($order->delivery_status == 'processing')
                                                 <i style="color: #54B435; font-size: 17px;" class="far fa-check-circle"></i>
-                                                <span class="product-name px-1">Your Product is Processing</span>
+                                                <span class="product-name px-1">Su producto se está procesando</span>
                                             @elseif($order->delivery_status == 'packaging')
                                                 <i style="color: #FF577F; font-size: 17px;" class="fas fa-box"></i>
-                                                <span class="product-name px-1">Your Product is Being Packaged</span>
+                                                <span class="product-name px-1">Su producto está siendo empaquetado</span>
                                             @elseif($order->delivery_status == 'shipped')
                                                 <i style="color: #AA77FF; font-size: 17px;" class="fas fa-truck-loading"></i>
-                                                <span class="product-name px-1">Your Product is Being Shipped</span>
+                                                <span class="product-name px-1">Su producto está siendo enviado</span>
                                             @elseif($order->delivery_status == 'on_the_way')
                                                 <i style="color: #FF6000; font-size: 17px;" class="fas fa-truck"></i>
-                                                <span class="product-name px-1">Your Product is On the Way</span>
+                                                <span class="product-name px-1">Su producto está en camino</span>
                                             @elseif($order->delivery_status == 'delivered')
                                                 <i style="color: #3EC70B; font-size: 17px;" class="fas fa-check-circle"></i>
-                                                <span class="product-name px-1">Your Product is Delivered</span>
+                                                <span class="product-name px-1">Su producto es entregado</span>
                                             @endif
                                         </td>
                                         <td class="text-center" data-title="Stock">
@@ -95,9 +95,9 @@
                                         <td class="action" data-title="View"><a href="#" class="text-muted"><i class="fas fa-eye"></i></a></td>
                                         <td>
                                             @if($order->delivery_status == 'pending')
-                                                <a class="btn" href="{{url('/cancel-order',$order->id)}}"><i class="fas fa-trash"></i> Cancel Order</a>
+                                                <a class="btn" href="{{url('/cancel-order',$order->id)}}"><i class="fas fa-trash"></i> Cancelar pedido</a>
                                             @elseif($order->delivery_status == 'delivered')
-                                                <a class="btn" href="{{url('/order-received',$order->id)}}"> I received my products</a>
+                                                <a class="btn" href="{{url('/order-received',$order->id)}}"> Recibí mis productos</a>
                                             @endif
                                         </td>
                                     </tr>
@@ -112,15 +112,15 @@
                             <table class="table shopping-summery text-center clean">
                                 <thead>
                                     <tr class="main-heading">
-                                        <th scope="col">Product</th>
-                                        <th scope="col">Order Tracking ID</th>
-                                        <th scope="col">Delivery Status</th>
-                                        <th scope="col">Quantity</th>
-                                        <th scope="col">Total Price</th>
-                                        <th scope="col">View</th>
+                                        <th scope="col">Producto</th>
+                                        <th scope="col">ID de seguimiento de pedidos</th>
+                                        <th scope="col">Estado de la entrega</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Precio total</th>
+                                        <th scope="col">Vista</th>
                                     </tr>
                                 </thead>
-                                <div class="divider center_icon mt-100 mb-30"><b>Past Orders</b></div>
+                                <div class="divider center_icon mt-100 mb-30"><b>Pedidos anteriores</b></div>
                                 <tbody>
                                     @foreach ($past_orders as $order)
                                     <tr>
@@ -130,7 +130,7 @@
                                         </td>
                                         <td class="product-des product-name px-5">
                                             <i style="color: #3EC70B; font-size: 17px;" class="fas fa-check-circle"></i>
-                                            <span class="product-name px-1">Product is received by user</span>
+                                            <span class="product-name px-1">El producto es recibido por el usuario</span>
                                         </td>
                                         <td class="text-center" data-title="Stock">
                                             <div class="detail-qty border radius  m-auto">
@@ -153,7 +153,7 @@
         </section>
     </main>
 
-    @include('user.footer')    
+    @include('user.footer')
     <!-- Vendor JS-->
     <script src="user/assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="user/assets/js/vendor/jquery-3.6.0.min.js"></script>

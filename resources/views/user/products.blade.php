@@ -32,7 +32,7 @@
                                         <a aria-label="View Details" href="{{url('product_details', $product->id)}}" class="action-btn hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
-                                        <span class="hot">New</span>
+                                        <span class="hot">Nuevo</span>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
@@ -77,7 +77,7 @@
                                                 <a aria-label="View Details" href="{{url('product_details', $product->id)}}" class="action-btn hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                             </div>
                                             <div class="product-badges product-badges-position product-badges-mrg">
-                                                <span class="hot">New</span>
+                                                <span class="hot">Nuevo</span>
                                             </div>
                                         </div>
                                         <div class="product-content-wrap">

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CyberMart | Shop</title>
+    <title>CyberMart | Tienda</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,13 +18,13 @@
 
 <body>
     @include('user.header')
-    @include('user.mobile_header')    
+    @include('user.mobile_header')
     <main class="main">
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="/" rel="nofollow">Home</a>                    
-                    <span></span> Shop
+                    <a href="/" rel="nofollow">Inicio</a>
+                    <span></span> Tienda
                 </div>
             </div>
         </div>
@@ -32,7 +32,7 @@
         @include('user.featured_brands')
     </main>
 
-    @include('user.footer')    
+    @include('user.footer')
     <!-- Vendor JS-->
     <script src="user/assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="user/assets/js/vendor/jquery-3.6.0.min.js"></script>

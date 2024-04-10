@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CyberMart | My Cart</title>
+    <title>CyberMart | Mi Carrito</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,16 +18,16 @@
 </head>
 
 <body>
-    
+
     @include('user.header')
-    @include('user.mobile_header')    
+    @include('user.mobile_header')
     <main class="main">
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="/" rel="nofollow">Home</a>
-                    <span></span> Shop
-                    <span></span> Your Cart
+                    <a href="/" rel="nofollow">Inicio</a>
+                    <span></span> Tienda
+                    <span></span> Su carrito
                 </div>
             </div>
         </div>
@@ -37,7 +37,7 @@
                     @if ($cartData->isEmpty())
                     {{-- this part will be updated --}}
                     <div class="text-center">
-                        <h1>Cart is empty</h1>
+                        <h1>El carrito está vacío</h1>
                         <img style="width: 25%" src="/user/assets/imgs/empty-cart-img.png" alt="">
                     </div>
                     @else
@@ -47,10 +47,10 @@
                             <table class="table shopping-summery text-center clean">
                                 <thead>
                                     <tr class="main-heading">
-                                        <th scope="col">Image</th>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Price</th>
-                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Imagen</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Cantidad</th>
                                         <th scope="col">Total Price</th>
                                         <th scope="col">Remove</th>
                                     </tr>
@@ -117,7 +117,7 @@
         </section>
     </main>
 
-    @include('user.footer')    
+    @include('user.footer')
     <!-- Vendor JS-->
     <script src="user/assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="user/assets/js/vendor/jquery-3.6.0.min.js"></script>
@@ -157,7 +157,7 @@
                     window.location.href = urlToRedirect;
                 }
             })
-            
+
         }
     </script>
 

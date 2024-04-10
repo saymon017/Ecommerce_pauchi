@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CyberMart | News</title>
+    <title>CyberMart | Noticias</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,13 +18,13 @@
 
 <body>
     @include('user.header')
-    @include('user.mobile_header')    
+    @include('user.mobile_header')
     <main class="main">
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="/" rel="nofollow">Home</a>                    
-                    <span></span> News
+                    <a href="/" rel="nofollow">Home</a>
+                    <span></span> Noticias
                 </div>
             </div>
         </div>
@@ -43,12 +43,12 @@
                                         <a aria-label="View Details" href="#" class="action-btn hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
                                     </div>
                                     <div class="product-badges product-badges-position product-badges-mrg">
-                                        <span class="hot">New</span>
+                                        <span class="hot">Nueva</span>
                                     </div>
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="product-category">
-                                        <a href="#">Technology</a>
+                                        <a href="#">Tecnología</a>
                                     </div>
                                     <h2><a href="{{ $article['url'] }}" target="_blank">{{$article['title']}}</a></h2>
                                     <p class="mt-5">{{ substr($article['content'], 0, 100) }}...</p>
@@ -62,7 +62,7 @@
                 </div>
     </main>
 
-    @include('user.footer')    
+    @include('user.footer')
     <!-- Vendor JS-->
     <script src="user/assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="user/assets/js/vendor/jquery-3.6.0.min.js"></script>

@@ -6,11 +6,11 @@
                     <div class="header-info">
                     <ul>
                         <li>
-                            <a class="language-dropdown-active" href="#"> <i class="fi-rs-world"></i> English <i class="fi-rs-angle-small-down"></i></a>
+                            <a class="language-dropdown-active" href="#"> <i class="fi-rs-world"></i> Español <i class="fi-rs-angle-small-down"></i></a>
                             <ul class="language-dropdown">
-                                <li><a href="#"><img src="user/assets/imgs/theme/flag-tr.png" alt="">Turkish</a></li>
+                                <li><a href="#"><img src="user/assets/imgs/theme/flag-tr.png" alt="">ingles</a></li>
                             </ul>
-                        </li>                                
+                        </li>
                         </ul>
                     </div>
                 </div>
@@ -18,27 +18,28 @@
                     <div class="text-center">
                         <div id="news-flash" class="d-inline-block">
                             <ul>
-                                <li>Get great devices up to 50% off <a href="#">View details</a></li>
+                                <li>Consigue grandes dispositivos con hasta un 50% de descuento <a href="#">Ver detalles</a></li>
                                 <li>Supper Value Deals - Save more with coupons</li>
-                                <li>Trendy 25silver jewelry, save up 35% off today <a href="#">Shop now</a></li>
+                                <li>Simon Molina  <a href="#">Desarrollador web</a></li>
+                                <li>Joyería de moda de 25 plata, ahorre hasta un 35% de descuento hoy <a href="#">Comprar ahora</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4">
                     <div class="header-info header-info-right">
-                        <ul>  
+                        <ul>
                             @if (Route::has('login'))
                                 @auth
                                     <li>
-                                        <a href="{{ route('user.logout') }}">Logout</a>
+                                        <a href="{{ route('user.logout') }}">Cerrar sesión</a>
                                     </li>
                                 @else
                                     <li>
-                                        <i class="fi-rs-key"></i><a href="{{route('login')}}">Log In </a>  / <a href="{{route('register')}}">Sign Up</a>
+                                        <i class="fi-rs-key"></i><a href="{{route('login')}}">Inicia sesión </a>  / <a href="{{route('register')}}">Registrarse</a>
                                     </li>
                                 @endauth
-                            @endif                              
+                            @endif
                         </ul>
                     </div>
                 </div>
@@ -54,8 +55,8 @@
                 <div class="header-right">
                     <div class="search-style-1">
                         <form action="{{url('/search-a-product')}}" method="GET">
-                            @csrf                                
-                            <input type="text" name="search" placeholder="Search for products...">
+                            @csrf
+                            <input type="text" name="search" placeholder="Buscar productos...">
                         </form>
                     </div>
                     <div class="header-action-right">
@@ -70,11 +71,11 @@
                                             <span class="pro-count blue">0</span>
                                         </a>
                                         <div class="cart-dropdown-wrap cart-dropdown-hm2">
-                                            <p>Cart is empty</p>
+                                            <p>El carrito está vacío </p>
                                         </div>
                                         @else
-                                        <?php 
-                                            $product_in_cart = 0; 
+                                        <?php
+                                            $product_in_cart = 0;
                                             $totalPrice = 0;
                                         ?>
                                         @foreach($cartData as $data)
@@ -92,7 +93,7 @@
                                                         <a href="{{url('product_details',$cart->product_id)}}"><img alt="Product Image" src="products_images/{{$cart->image}}"></a>
                                                     </div>
                                                     <div class="shopping-cart-title">
-                                                        <h4><a href="{{url('product_details',$cart->product_id)}}">See Details</a></h4>
+                                                        <h4><a href="{{url('product_details',$cart->product_id)}}">Ver detalles</a></h4>
                                                         <h4><span>{{$cart->quantity}} × </span>${{$cart->price/$cart->quantity}}</h4>
                                                     </div>
                                                     <div class="shopping-cart-delete">
@@ -107,13 +108,13 @@
                                                     <h4>Total <span>${{$totalPrice}}</span></h4>
                                                 </div>
                                                 <div class="shopping-cart-button">
-                                                    <a href="{{route('user.cart')}}" class="outline">View cart</a>
-                                                    <a href="{{route('user.checkout')}}">Checkout</a>
+                                                    <a href="{{route('user.cart')}}" class="outline">Ver carrito</a>
+                                                    <a href="{{route('user.checkout')}}">Caja</a>
                                                 </div>
                                             </div>
                                             @endif
                                         </div>
-                                    
+
                                     @else
                                         <a class="mini-cart-icon" href="#">
                                             <img alt="Surfside Media" src="user/assets/imgs/theme/icons/icon-cart.svg">
@@ -124,9 +125,9 @@
                                                 <div class="shopping-cart-total">
                                                     <center>
                                                         <img style="width: 50%" src="/user/assets/imgs/empty-cart-img.png" alt="">
-                                                        <h4>You need to login first!</h4>
+                                                        <h4>¡Primero debes iniciar sesión!</h4>
                                                         <div class="shopping-cart-button">
-                                                            <a href="{{route('login')}}" class="outline">Login</a>
+                                                            <a href="{{route('login')}}" class="outline">Iniciar sesión</a>
                                                         </div>
                                                     </center>
                                                 </div>
@@ -134,7 +135,7 @@
                                         </div>
                                     @endauth
                                 @endif
-                                
+
                             </div>
                         </div>
                     </div>
@@ -152,17 +153,17 @@
                     <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block">
                         <nav>
                             <ul>
-                                <li><a class="active" href="{{url('/')}}">Home </a></li>
-                                <li><a href="{{route('user.shop')}}">Shop</a></li>                             
-                                <li><a href="{{route('user.contact')}}">Contact</a></li>
-                                <li><a href="{{route('news')}}">News</a></li>
+                                <li><a class="active" href="{{url('/')}}">Inicio </a></li>
+                                <li><a href="{{route('user.shop')}}">Tienda</a></li>
+                                <li><a href="{{route('user.contact')}}">Contacto</a></li>
+                                <li><a href="{{route('news')}}">Noticias</a></li>
                                 @if (Route::has('login'))
                                     @auth
-                                        <li><a href="{{route('user.account')}}">My Account<i class="fi-rs-angle-down"></i></a>
+                                        <li><a href="{{route('user.account')}}">Mi Cuenta<i class="fi-rs-angle-down"></i></a>
                                             <ul class="sub-menu">
-                                                <li><a href="{{route('user.account')}}">Dashboard</a></li>
-                                                <li><a href="{{url('/orders')}}">Orders</a></li>
-                                                <li><a href="{{ route('user.logout') }}">Logout</a></li>                                            
+                                                <li><a href="{{route('user.account')}}">Salpicadero</a></li>
+                                                <li><a href="{{url('/orders')}}">Órdenes</a></li>
+                                                <li><a href="{{ route('user.logout') }}">Cerrar sesión</a></li>
                                             </ul>
                                         </li>
                                     @endauth
@@ -172,7 +173,7 @@
                     </div>
                 </div>
                 <div class="hotline d-none d-lg-block">
-                    <p><i class="fi-rs-smartphone"></i><span>Toll Free</span> (+90) 5367-934-046 </p>
+                    <p><i class="fi-rs-smartphone"></i><span>Línea gratuita</span> (+36) 3003-769-671 </p>
                 </div>
             </div>
         </div>

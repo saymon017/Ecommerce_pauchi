@@ -18,13 +18,13 @@
 
 <body>
     @include('user.header')
-    @include('user.mobile_header')    
+    @include('user.mobile_header')
     <main class="main">
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="/" rel="nofollow">Home</a>                    
-                    <span></span> Contact
+                    <a href="/" rel="nofollow">Inicio</a>
+                    <span></span> Contacto
                 </div>
             </div>
         </div>
@@ -33,35 +33,35 @@
                 <div class="row">
                     <div class="col-xl-8 col-lg-10 m-auto">
                         <div class="contact-from-area padding-20-row-col wow FadeInUp">
-                            <h3 class="mb-10 text-center">Drop Us a Line</h3>
-                            <p class="text-muted mb-30 text-center font-sm">Lorem ipsum dolor sit amet consectetur.</p>
+                            <h3 class="mb-10 text-center">Escríbenos</h3>
+                            <p class="text-muted mb-30 text-center font-sm">Contactanos.</p>
                             <form class="contact-form-style text-center" id="contact-form" action="#">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6">
                                         <div class="input-style mb-20">
-                                            <input name="name" placeholder="First Name" type="text">
+                                            <input name="name" placeholder="Nombre" type="text">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="input-style mb-20">
-                                            <input name="email" placeholder="Your Email" type="email">
+                                            <input name="email" placeholder="Su correo electrónico" type="email">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="input-style mb-20">
-                                            <input name="telephone" placeholder="Your Phone" type="tel">
+                                            <input name="telephone" placeholder="Tu teléfono" type="tel">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="input-style mb-20">
-                                            <input name="subject" placeholder="Subject" type="text">
+                                            <input name="subject" placeholder="Asunto" type="text">
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="textarea-style mb-30">
-                                            <textarea name="message" placeholder="Message"></textarea>
+                                            <textarea name="message" placeholder="Mensaje"></textarea>
                                         </div>
-                                        <button class="submit submit-auto-width" type="button">Send message</button>
+                                        <button class="submit submit-auto-width" type="button">Enviar mensaje</button>
                                     </div>
                                 </div>
                             </form>
@@ -73,7 +73,7 @@
         </section>
     </main>
 
-    @include('user.footer')    
+    @include('user.footer')
     <!-- Vendor JS-->
     <script src="user/assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="user/assets/js/vendor/jquery-3.6.0.min.js"></script>

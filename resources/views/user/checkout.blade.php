@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CyberMart | Checkout</title>
+    <title>CyberMart | Caja</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,14 +19,14 @@
 <body>
     @include('sweetalert::alert');
     @include('user.header')
-    @include('user.mobile_header')    
+    @include('user.mobile_header')
     <main class="main">
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="/" rel="nofollow">Home</a>
-                    <span></span> Shop
-                    <span></span> Checkout
+                    <a href="/" rel="nofollow">Inicio</a>
+                    <span></span> Tienda
+                    <span></span> Caja
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@
                     @if ($cartData->isEmpty())
                     {{-- this part will be updated --}}
                     <div class="text-center">
-                        <h1>Cart is empty</h1>
+                        <h1>El carrito está vacío</h1>
                         <img style="width: 25%" src="/user/assets/imgs/empty-cart-img.png" alt="">
                     </div>
                     @else
@@ -46,12 +46,12 @@
                             <table class="table shopping-summery text-center clean">
                                 <thead>
                                     <tr class="main-heading">
-                                        <th scope="col">Image</th>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Price</th>
-                                        <th scope="col">Quantity</th>
-                                        <th scope="col">Total Price</th>
-                                        <th scope="col">Remove</th>
+                                        <th scope="col">Imagen</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Precio total</th>
+                                        <th scope="col">Eliminar</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -77,15 +77,15 @@
                                     @endforeach
                                     <tr>
                                         <td colspan="6" class="text-end">
-                                            <a href="{{route('user.clear_cart')}}" class="text-muted"> <i class="fi-rs-cross-small"></i> Clear Order</a>
+                                            <a href="{{route('user.clear_cart')}}" class="text-muted"> <i class="fi-rs-cross-small"></i> Orden claro</a>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="cart-action text-end">
-                            <a class="btn  mr-10 mb-sm-15" href="{{url('/stripe', $totalPrice)}}"><i class="fi-rs-shuffle mr-10"></i>Pay By Card</a>
-                            <a class="btn " href="{{url('/cash-order')}}"><i class="fi-rs-shopping-bag mr-10"></i>Cash On Delivery</a>
+                            <a class="btn  mr-10 mb-sm-15" href="{{url('/stripe', $totalPrice)}}"><i class="fi-rs-shuffle mr-10"></i>Pagar con tarjeta</a>
+                            <a class="btn " href="{{url('/cash-order')}}"><i class="fi-rs-shopping-bag mr-10"></i>Pago contra reembolso</a>
                         </div>
                         <div class="divider center_icon mt-50 mb-50"><i class="fi-rs-fingerprint"></i></div>
                     </div>
@@ -95,7 +95,7 @@
         </section>
     </main>
 
-    @include('user.footer')    
+    @include('user.footer')
     <!-- Vendor JS-->
     <script src="user/assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="user/assets/js/vendor/jquery-3.6.0.min.js"></script>
