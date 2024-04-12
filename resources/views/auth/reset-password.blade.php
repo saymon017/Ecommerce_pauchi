@@ -1,7 +1,7 @@
 <x-guest-layout>
     <x-authentication-card>
         <x-slot name="logo">
-            
+
         </x-slot>
         <img src="/user/assets/imgs/logo/app_logo.png" alt="">
 
@@ -29,7 +29,7 @@
 
             <div class="flex items-center justify-end mt-4">
                 <x-button>
-                    {{ __('Reset Password') }}
+                    {{ __('Restablecer la contraseña') }}
                 </x-button>
             </div>
         </form>

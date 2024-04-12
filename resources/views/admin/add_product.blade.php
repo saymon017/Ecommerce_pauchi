@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Admin | Add Product</title>
+    <title>Admin | Agregar producto</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="admin/assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="admin/assets/vendors/css/vendor.bundle.base.css">
@@ -42,12 +42,12 @@
                         <form action="{{route('admin.add_product')}}" method="post" enctype="multipart/form-data">
                             @csrf
                         <div class="card-body">
-                            <h4 class="card-title">Add Product Form</h4>
-                            <p class="card-description"> Computer details </p>
+                            <h4 class="card-title">Agregar formulario de producto</h4>
+                            <p class="card-description"> Detalles de la computadora </p>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Product Title</label>
+                                        <label class="col-sm-3 col-form-label">Titulo del producto</label>
                                         <div class="col-sm-9">
                                             <input name="title" type="text" class="form-control" style="color: #fff" required/>
                                         </div>
@@ -55,7 +55,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Category</label>
+                                        <label class="col-sm-3 col-form-label">Categoría</label>
                                         <div class="col-sm-9">
                                             <select name="category" class="form-control" required style="color: #fff">
                                                 @foreach ($categories as $category)
@@ -66,11 +66,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="card-description"> Screen </p>
+                            <p class="card-description"> Pantalla </p>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Screen Size</label>
+                                        <label class="col-sm-3 col-form-label">Tamaño de pantalla</label>
                                         <div class="col-sm-9">
                                             <input name="screen_size" placeholder="ex: 15,6 inc" type="text" class="form-control" style="color: #fff" required/>
                                         </div>
@@ -78,7 +78,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Screen Resolution</label>
+                                        <label class="col-sm-3 col-form-label">Resolución de la pantalla</label>
                                         <div class="col-sm-9">
                                             <input name="screen_resolution" placeholder="ex: 1920x1080" type="text" class="form-control" style="color: #fff" required/>
                                         </div>
@@ -88,7 +88,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Screen Refresh Rate</label>
+                                        <label class="col-sm-3 col-form-label">Tasa de refresco de la pantalla</label>
                                         <div class="col-sm-9">
                                             <input name="screen_refresh_rate" placeholder="ex: 144 Hz" type="text" class="form-control" style="color: #fff" required/>
                                         </div>
@@ -96,18 +96,18 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Device Weight</label>
+                                        <label class="col-sm-3 col-form-label">Peso del dispositivo</label>
                                         <div class="col-sm-9">
                                             <input name="device_weight" placeholder="ex: 2KG" type="text" class="form-control" style="color: #fff" required/>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <p class="card-description"> Processor </p>
+                            <p class="card-description"> Procesador </p>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Processor</label>
+                                        <label class="col-sm-3 col-form-label">Procesador</label>
                                         <div class="col-sm-9">
                                             <input name="processor" placeholder="ex: 12650H" type="text" class="form-control" style="color: #fff" required/>
                                         </div>
@@ -115,7 +115,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Processor Generation</label>
+                                        <label class="col-sm-3 col-form-label">Generación de procesador</label>
                                         <div class="col-sm-9">
                                             <input name="processor_generation" placeholder="ex: 12" type="text" class="form-control" style="color: #fff" required/>
                                         </div>
@@ -125,7 +125,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Processor Type</label>
+                                        <label class="col-sm-3 col-form-label">Tipo de procesador</label>
                                         <div class="col-sm-9">
                                             <input name="processor_type" placeholder="ex: Core i7" type="text" class="form-control" style="color: #fff" required/>
                                         </div>
@@ -133,18 +133,18 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Processor Speed</label>
+                                        <label class="col-sm-3 col-form-label">Velocidad del procesador</label>
                                         <div class="col-sm-9">
                                             <input name="processor_speed" placeholder="ex: 2.4GH" type="text" class="form-control" style="color: #fff" required/>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <p class="card-description"> Graphics </p>
+                            <p class="card-description"> Gráficos </p>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Graphics Type</label>
+                                        <label class="col-sm-3 col-form-label">Tipo de gráficos</label>
                                         <div class="col-sm-9">
                                             <input name="graphics_type" placeholder="ex: Nvidia GeForce RTX" type="text" class="form-control" style="color: #fff" required/>
                                         </div>
@@ -152,14 +152,14 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Graphics Card Memory</label>
+                                        <label class="col-sm-3 col-form-label">Memoria de la tarjeta gráfica</label>
                                         <div class="col-sm-9">
                                             <input name="graphics_card_memory" placeholder="ex: 6GB" type="text" class="form-control" style="color: #fff" required/>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <p class="card-description">Memory</p>
+                            <p class="card-description">Memoria</p>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group row">
@@ -171,7 +171,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">SSD Capacity</label>
+                                        <label class="col-sm-3 col-form-label">Capacidad de SSD</label>
                                         <div class="col-sm-9">
                                             <input name="ssd_capacity" placeholder="ex: 1TB" type="text" class="form-control" style="color: #fff" required/>
                                         </div>
@@ -179,11 +179,11 @@
                                 </div>
                             </div>
 
-                            <p class="card-description">External Details</p>
+                            <p class="card-description">Detalles externos</p>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Keyboard</label>
+                                        <label class="col-sm-3 col-form-label">Teclado</label>
                                         <div class="col-sm-9">
                                             <input name="keyboard" placeholder="ex: Q Turkish" type="text" class="form-control" style="color: #fff" required/>
                                         </div>
@@ -198,11 +198,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="card-description">Other Details</p>
+                            <p class="card-description">Otros detalles</p>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Price</label>
+                                        <label class="col-sm-3 col-form-label">Precio</label>
                                         <div class="col-sm-9">
                                             <input name="price" placeholder="ex: $1200" type="text" class="form-control" style="color: #fff" required/>
                                         </div>
@@ -210,7 +210,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Discount Price</label>
+                                        <label class="col-sm-3 col-form-label">Precio de descuento</label>
                                         <div class="col-sm-9">
                                             <input name="discount_price" placeholder="ex: 10%" type="text" class="form-control" style="color: #fff" required/>
                                         </div>
@@ -220,7 +220,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Operating System</label>
+                                        <label class="col-sm-3 col-form-label">Sistema operativo</label>
                                         <div class="col-sm-9">
                                             <input name="operating_system" placeholder="ex: Windows 11 Pro" type="text" class="form-control" style="color: #fff" required/>
                                         </div>
@@ -228,7 +228,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Quantity</label>
+                                        <label class="col-sm-3 col-form-label">Cantidad</label>
                                         <div class="col-sm-9">
                                             <input name="quantity" placeholder="ex: 20" type="text" class="form-control" style="color: #fff" required/>
                                         </div>
@@ -239,7 +239,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Product Image</label>
+                                        <label class="col-sm-3 col-form-label">Imagen del producto</label>
                                         <input id="image" type="file" name="image" class="file-upload-default" required>
                                         <div class="input-group col-sm-9">
                                             <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
@@ -253,7 +253,7 @@
                                     <div class="form-group row">
                                         <label class="col-sm-3 col-form-label"></label>
                                         <div class="input-group col-sm-9">
-                                            <button type="submit" class="btn btn-info">Add Product</button>
+                                            <button type="submit" class="btn btn-info">Agregar producto</button>
                                         </div>
                                     </div>
                                 </div>
@@ -261,7 +261,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label class="col-sm-3 col-form-label">Product Image</label>
+                                        <label class="col-sm-3 col-form-label">Imagen del producto</label>
                                         <div class="input-group col-sm-9">
                                             <img id="showImage" style="width: 40%;border-radius: 3%;" src="/admin/assets/images/no_image.jpg" alt="product_image">
                                         </div>

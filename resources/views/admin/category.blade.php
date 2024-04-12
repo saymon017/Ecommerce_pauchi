@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Admin | Category</title>
+    <title>Admin | Categoría</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="admin/assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="admin/assets/vendors/css/vendor.bundle.base.css">
@@ -36,13 +36,13 @@
                 </div>
             @endif
             <div class="text-center pt-4 pb-5">
-                <h2>Add Category</h2>
+                <h2>añadir categoría</h2>
             </div>
             <div class="row">
                 <div class="col-md-6 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">All Categories</h4>
+                            <h4 class="card-title">todas las categorias</h4>
                             @foreach ($categories as $category)
                                 <div class="form-group">
                                     <div class="input-group">
@@ -59,17 +59,17 @@
                 <div class="col-md-6 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">Add New Category</h4>
+                            <h4 class="card-title">Añadir nueva categoria</h4>
                             <form class="forms-sample" action="{{route('admin.add_category')}}" method="post">
                                 @csrf
                                 <div class="form-group row">
-                                    <label for="category" class="col-sm-3 col-form-label">Category Name</label>
+                                    <label for="category" class="col-sm-3 col-form-label">nombre de la categoría</label>
                                     <div class="col-sm-9">
-                                        <input style="color: #fff" type="text" name="category" class="form-control" id="category" placeholder="Enter Category Name..." required>
+                                        <input style="color: #fff" type="text" name="category" class="form-control" id="category" placeholder="Ingrese el nombre de la categoría..." required>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                                <a class="btn btn-dark" href="{{route('admin.category')}}">Cancel</a>
+                                <button type="submit" class="btn btn-primary mr-2">Entregar</button>
+                                <a class="btn btn-dark" href="{{route('admin.category')}}">Cancelar</a>
                             </form>
                         </div>
                     </div>

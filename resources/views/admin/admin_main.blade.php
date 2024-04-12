@@ -17,7 +17,7 @@
                     </div>
                     </div>
                 </div>
-                <h6 class="text-muted font-weight-normal">Total Customers</h6>
+                <h6 class="text-muted font-weight-normal">Clientes totales</h6>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
                     </div>
                     </div>
                 </div>
-                <h6 class="text-muted font-weight-normal">Total Products</h6>
+                <h6 class="text-muted font-weight-normal">Productos totales</h6>
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                 </div>
-                <h6 class="text-muted font-weight-normal">Total Active Orders</h6>
+                <h6 class="text-muted font-weight-normal">Total de pedidos activos</h6>
                 </div>
             </div>
         </div>
@@ -80,7 +80,7 @@
                     </div>
                 </div>
             </div>
-            <h6 class="text-muted font-weight-normal">Orders Delivered</h6>
+            <h6 class="text-muted font-weight-normal">Pedidos entregados</h6>
             </div>
         </div>
         </div>
@@ -101,7 +101,7 @@
                         </div>
                     </div>
                 </div>
-                <h6 class="text-muted font-weight-normal">Orders Processing</h6>
+                <h6 class="text-muted font-weight-normal">Procesamiento de pedidos</h6>
                 </div>
             </div>
         </div>
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-                <h6 class="text-muted font-weight-normal">Revenue</h6>
+                <h6 class="text-muted font-weight-normal">Ganancia</h6>
                 </div>
             </div>
         </div>
@@ -139,7 +139,7 @@
                         </div>
                     </div>
                 </div>
-                <h6 class="text-muted font-weight-normal">Sold Products Amount</h6>
+                <h6 class="text-muted font-weight-normal">Cantidad de productos vendidos</h6>
                 </div>
             </div>
         </div>
@@ -149,7 +149,7 @@
         <div class="col-lg-6 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                <h4 class="card-title">Doughnut chart</h4>
+                <h4 class="card-title">gráfico de anillos</h4>
                 <canvas id="doughnutChart" style="height:250px"></canvas>
                 </div>
             </div>
@@ -157,7 +157,7 @@
         <div class="col-lg-6 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                <h4 class="card-title">Bar chart</h4>
+                <h4 class="card-title">Gráfico de barras</h4>
                 <canvas id="barChart" style="height:230px"></canvas>
                 </div>
             </div>

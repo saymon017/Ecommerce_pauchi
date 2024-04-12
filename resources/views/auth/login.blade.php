@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CyberMart | Login</title>
+    <title>CyberMart | inicio de sesión</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,13 +18,13 @@
 
 <body>
     @include('user.header')
-    @include('user.mobile_header')    
+    @include('user.mobile_header')
     <main class="main">
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="/" rel="nofollow">Home</a>                    
-                    <span></span> Login
+                    <a href="/" rel="nofollow">Inicio</a>
+                    <span></span> inicio de sesión
                 </div>
             </div>
         </div>
@@ -48,22 +48,22 @@
                                         <form method="post" action="{{ route('login') }}">
                                             @csrf
                                             <div class="form-group">
-                                                <input type="text" required="" name="email" placeholder="Your Email">
+                                                <input type="text" required="" name="email" placeholder="Tu correo electrónico">
                                             </div>
                                             <div class="form-group">
-                                                <input required="" type="password" name="password" placeholder="Password">
+                                                <input required="" type="password" name="password" placeholder="Contraseña">
                                             </div>
                                             <div class="login_footer form-group">
                                                 <div class="chek-form">
                                                     <div class="custome-checkbox">
                                                         <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox1" value="">
-                                                        <label class="form-check-label" for="exampleCheckbox1"><span>Remember me</span></label>
+                                                        <label class="form-check-label" for="exampleCheckbox1"><span>Acuérdate de mí</span></label>
                                                     </div>
                                                 </div>
-                                                <a class="text-muted" href="{{ route('password.request') }}">Forgot password?</a>
+                                                <a class="text-muted" href="{{ route('password.request') }}">¿Has olvidado tu contraseña?</a>
                                             </div>
                                             <div class="form-group">
-                                                <button type="submit" class="btn btn-fill-out btn-block hover-up" name="login">Log in</button>
+                                                <button type="submit" class="btn btn-fill-out btn-block hover-up" name="login">inicio de sesión</button>
                                             </div>
                                         </form>
                                     </div>
@@ -80,7 +80,7 @@
         </section>
     </main>
 
-    @include('user.footer')    
+    @include('user.footer')
     <!-- Vendor JS-->
     <script src="user/assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="user/assets/js/vendor/jquery-3.6.0.min.js"></script>

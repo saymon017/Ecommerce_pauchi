@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Admin | View Customers</title>
+    <title>Admin | Ver clientes</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="admin/assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="admin/assets/vendors/css/vendor.bundle.base.css">
@@ -31,22 +31,22 @@
           <div class="content-wrapper">
             <form action="{{url('/search-user')}}" class="nav-link mt-2 mt-md-0 d-none d-lg-flex search" method="GET">
               @csrf
-              <input type="text" name="search" class="form-control" placeholder="Search Users" style="color: #fff">
+              <input type="text" name="search" class="form-control" placeholder="Buscar usuarios" style="color: #fff">
             </form>
             <div class="row ">
                 <div class="col-12 grid-margin">
                     <div class="card">
                         <div class="card-body">
-                        <h4 class="card-title">Customers</h4>
+                        <h4 class="card-title">Clientes</h4>
                         <div class="table-responsive">
                             <table class="table">
                             <thead>
                                 <tr>
-                                    <th> Client Name </th>
-                                    <th> Email </th>
-                                    <th> Phone </th>
-                                    <th>Join Date</th>
-                                    <th> Edit</th>
+                                    <th> nombre del cliente </th>
+                                    <th> Correo </th>
+                                    <th> Teléfono </th>
+                                    <th>Fecha de Ingreso</th>
+                                    <th> Editar</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -57,7 +57,7 @@
                                         <td>{{$user->phone}}</td>
                                         <td>{{$user->created_at}}</td>
                                         <td>
-                                            <a href="{{url('delete-user',$user->id)}}" class="btn btn-info">Delete User</a>
+                                            <a href="{{url('delete-user',$user->id)}}" class="btn btn-info">Borrar usuario</a>
                                         </td>
                                     </tr>
                                     @empty
@@ -65,7 +65,7 @@
                                         <td colspan="16">
                                             <div class="text-center">
                                             <img style="width: 25%;height: 25%;" src="/user/assets/imgs/no-search-result.png" alt="no-search-result">
-                                            <h4>No User Was Found!</h4>
+                                            <h4>¡No se encontró ningún usuario!</h4>
                                             </div>
                                         </td>
                                     </tr>

@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Admin | Orders</title>
+    <title>Admin | Pedidos</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="admin/assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="admin/assets/vendors/css/vendor.bundle.base.css">
@@ -42,15 +42,15 @@
                             <table class="table">
                             <thead>
                                 <tr>
-                                    <th> Tracking ID </th>
-                                    <th> Email </th>
-                                    <th> Phone </th>
-                                    <th> Price </th>
-                                    <th> Payment Status </th>
-                                    <th> Delivery Status </th>
-                                    <th> Image</th>
-                                    <th> Order Date</th>
-                                    <th>Bill</th>
+                                    <th> ID de rastreo </th>
+                                    <th> Correo </th>
+                                    <th> Teléfono </th>
+                                    <th> Precio </th>
+                                    <th> Estado de pago </th>
+                                    <th> Estado de entrega </th>
+                                    <th> Imagen</th>
+                                    <th> Fecha de orden</th>
+                                    <th>Factura</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -68,13 +68,13 @@
                                                 <div class="input-group-prepend">
                                                 <button class="btn btn-sm btn-outline-warning dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{$order->delivery_status}}</button>
                                                 <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="{{ url('/update-order/'.$order->user_id.'/'.$order->id.'/processing') }}">Processing</a>
-                                                    <a class="dropdown-item" href="{{ url('/update-order/'.$order->user_id.'/'.$order->id.'/pending') }}">Pending</a>
-                                                    <a class="dropdown-item" href="{{ url('/update-order/'.$order->user_id.'/'.$order->id.'/packaging') }}">Packaging</a>
-                                                    <a class="dropdown-item" href="{{ url('/update-order/'.$order->user_id.'/'.$order->id.'/shipped') }}">Shipped</a>
-                                                    <a class="dropdown-item" href="{{ url('/update-order/'.$order->user_id.'/'.$order->id.'/on_the_way') }}">On The Way</a>
-                                                    <a class="dropdown-item" href="{{ url('/update-order/'.$order->user_id.'/'.$order->id.'/delivered') }}">Delivered</a>
-                                                    <a class="dropdown-item" href="{{ url('/update-order/'.$order->user_id.'/'.$order->id.'/cancel_order') }}">Cancel Order</a>  
+                                                    <a class="dropdown-item" href="{{ url('/update-order/'.$order->user_id.'/'.$order->id.'/processing') }}">Procesando</a>
+                                                    <a class="dropdown-item" href="{{ url('/update-order/'.$order->user_id.'/'.$order->id.'/pending') }}">Pendiente</a>
+                                                    <a class="dropdown-item" href="{{ url('/update-order/'.$order->user_id.'/'.$order->id.'/packaging') }}">embalaje</a>
+                                                    <a class="dropdown-item" href="{{ url('/update-order/'.$order->user_id.'/'.$order->id.'/shipped') }}">Enviado</a>
+                                                    <a class="dropdown-item" href="{{ url('/update-order/'.$order->user_id.'/'.$order->id.'/on_the_way') }}">En camino</a>
+                                                    <a class="dropdown-item" href="{{ url('/update-order/'.$order->user_id.'/'.$order->id.'/delivered') }}">Entregado</a>
+                                                    <a class="dropdown-item" href="{{ url('/update-order/'.$order->user_id.'/'.$order->id.'/cancel_order') }}">Cancelar orden</a>
                                                 </div>
                                                 </div>
                                             </div>
@@ -84,7 +84,7 @@
                                         </td>
                                         <td>{{$order->created_at}}</td>
                                         <td>
-                                            <a href="{{url('print-bill', $order->id)}}" class="btn btn-outline-info">Print Bill</a>
+                                            <a href="{{url('print-bill', $order->id)}}" class="btn btn-outline-info">Imprimir factura</a>
                                         </td>
                                     </tr>
                                 @endforeach

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CyberMart | Register</title>
+    <title>CyberMart | Registro</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,13 +18,13 @@
 
 <body>
     @include('user.header')
-    @include('user.mobile_header')    
+    @include('user.mobile_header')
     <main class="main">
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="/" rel="nofollow">Home</a>                    
-                    <span></span> Register
+                    <a href="/" rel="nofollow">Inicio</a>
+                    <span></span> Registro
                 </div>
             </div>
         </div>
@@ -37,37 +37,37 @@
                             <div class="login_wrap widget-taber-content p-30 background-white border-radius-5">
                                     <div class="padding_eight_all bg-white">
                                         <div class="heading_s1">
-                                            <h3 class="mb-30">Create an Account</h3>
-                                        </div> 
-                                        <x-validation-errors class="mb-4" style="color: red;"/>                                       
+                                            <h3 class="mb-30">Crea una cuenta</h3>
+                                        </div>
+                                        <x-validation-errors class="mb-4" style="color: red;"/>
                                         <form method="post" action="{{ route('register') }}">
                                             @csrf
                                             <div class="form-group">
-                                                <input type="text" required="" name="name" placeholder="Name">
+                                                <input type="text" required="" name="name" placeholder="Nombre">
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" required="" name="email" placeholder="Email">
+                                                <input type="text" required="" name="email" placeholder="Correo">
                                             </div>
                                             <div class="form-group">
-                                                <input type="number" required="" name="phone" placeholder="Phone Number">
+                                                <input type="number" required="" name="phone" placeholder="Número de teléfono">
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" required="" name="address" placeholder="Address">
+                                                <input type="text" required="" name="address" placeholder="Dirección">
                                             </div>
                                             <div class="form-group">
-                                                <input required="" type="password" name="password" placeholder="Password">
+                                                <input required="" type="password" name="password" placeholder="Contraseña">
                                             </div>
                                             <div class="form-group">
-                                                <input required="" type="password" name="password_confirmation" placeholder="Confirm password">
+                                                <input required="" type="password" name="password_confirmation" placeholder="Confirmar Contraseña">
                                             </div>
                                             <div class="form-group">
-                                                <button type="submit" class="btn btn-fill-out btn-block hover-up">Submit &amp; Register</button>
+                                                <button type="submit" class="btn btn-fill-out btn-block hover-up">Entregar &amp; Registro</button>
                                             </div>
-                                        </form>                                        
-                                        <div class="text-muted text-center">Already have an account? <a href="{{route('login')}}">Sign in now</a></div>
+                                        </form>
+                                        <div class="text-muted text-center">¿Ya tienes una cuenta? <a href="{{route('login')}}">Regístrate</a></div>
                                     </div>
                                 </div>
-                            </div>                            
+                            </div>
                             <div class="col-lg-6">
                                <img src="user/assets/imgs/login.png">
                             </div>
@@ -78,7 +78,7 @@
         </section>
     </main>
 
-    @include('user.footer')    
+    @include('user.footer')
     <!-- Vendor JS-->
     <script src="user/assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="user/assets/js/vendor/jquery-3.6.0.min.js"></script>

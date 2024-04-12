@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Admin | Show Products</title>
+    <title>Admin | Mostrar productos</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="admin/assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="admin/assets/vendors/css/vendor.bundle.base.css">
@@ -30,7 +30,7 @@
         @include('admin.navbar')
         <div class="main-panel">
           <div class="content-wrapper">
-            
+
             <form action="{{url('/search-product')}}" class="nav-link mt-2 mt-md-0 d-none d-lg-flex search" method="GET">
               @csrf
               <input type="text" name="search" class="form-control" placeholder="Search products" style="color: #fff">
@@ -38,21 +38,21 @@
             <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">All Products</h4>
+                    <h4 class="card-title">Todos los productos</h4>
                     <div class="table-responsive">
                       <table class="table table-striped">
                         <thead>
                           <tr>
-                            <th>Product Image</th>
-                            <th>Category</th>
-                            <th>Price</th>
-                            <th>Discount Price</th>
-                            <th>Quantity</th>
-                            <th>Processor</th>
+                            <th>Imagen del producto</th>
+                            <th>Categoría</th>
+                            <th>Precio</th>
+                            <th>Precio de descuento</th>
+                            <th>Cantidad</th>
+                            <th>Procesador</th>
                             <th>RAM</th>
                             <th>SSD</th>
-                            <th>Delete</th>
-                            <th>Edit</th>
+                            <th>Procesador</th>
+                            <th>Editar</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -80,7 +80,7 @@
                               <td colspan="16">
                                 <div class="text-center">
                                   <img style="width: 25%;height: 25%;" src="/user/assets/imgs/no-search-result.png" alt="no-search-result">
-                                  <h4>No Product Was Found!</h4>
+                                  <h4>¡No se encontró ningún producto!</h4>
                                 </div>
                               </td>
                             </tr>

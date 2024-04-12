@@ -30,7 +30,7 @@
                     </div>
                     </div>
                     <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
+                    <p class="preview-subject ellipsis mb-1 text-small">Configuraciones de la cuenta</p>
                     </div>
                 </a>
                 <div class="dropdown-divider"></div>
@@ -41,13 +41,13 @@
                     </div>
                     </div>
                     <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1 text-small">Change Password</p>
+                    <p class="preview-subject ellipsis mb-1 text-small">Cambiar la contraseña</p>
                     </div>
                 </a>
             </div>
         </li>
         <li class="nav-item nav-category">
-        <span class="nav-link">Navigation</span>
+        <span class="nav-link">Navegación</span>
         </li>
         <li class="nav-item menu-items">
             <a class="nav-link" href="{{route('home')}}">
@@ -62,7 +62,7 @@
                 <span class="menu-icon">
                 <i class="mdi mdi-playlist-play"></i>
                 </span>
-                <span class="menu-title">Product Categories</span>
+                <span class="menu-title">Categorías de Producto</span>
             </a>
         </li>
         <li class="nav-item menu-items">
@@ -70,7 +70,7 @@
               <span class="menu-icon">
                 <i class="mdi mdi-cart"></i>
               </span>
-              <span class="menu-title">Products</span>
+              <span class="menu-title">Productos</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="ui-basic">
@@ -85,7 +85,7 @@
                 <span class="menu-icon">
                 <i class="mdi mdi-basket"></i>
                 </span>
-                <span class="menu-title">Orders</span>
+                <span class="menu-title">Pedidos</span>
             </a>
         </li>
     </ul>
